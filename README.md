@@ -52,7 +52,7 @@ yarn
 
 docker compose up
 ```
-This will launch the front end application on `localhost:3001` where you can interact with the UI to manage client data.
+This will launch the back end application on `localhost:3001`.
 
 .
 
