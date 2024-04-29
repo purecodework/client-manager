@@ -1,6 +1,6 @@
 # Client Manager
 
-Welcome to the `Client Manager` application. This client-side application is built with React, Express, and Postgres, designed for managing client information efficiently with functionalities that include searching clients by name, editing client details, and deleting client records.
+Welcome to the `Client Manager` application. This client-side application is built with _React_, _Express_, and _Postgres_, designed for managing client information efficiently with functionalities that include searching clients by name, editing client details, and deleting client records.
 
 ## Prerequisites
 
