@@ -1,0 +1,53 @@
+.client-list {
+  &__table {
+    width: 100%;
+    margin: 20px 0;
+    margin-top: 40px;
+    th {
+      white-space: nowrap;
+    }
+
+    tbody {
+      display: block;
+      overflow-y: auto;
+
+      max-height: 800px;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 0;
+      }
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 20px;
+      padding: 20px;
+      padding-bottom: 20px;
+
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    td {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-td {
+      padding-top: 20px;
+      button {
+        width: 45%;
+      }
+    }
+  }
+}

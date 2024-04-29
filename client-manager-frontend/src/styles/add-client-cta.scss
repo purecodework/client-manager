@@ -1,0 +1,19 @@
+.add-client-cta {
+  width: 140px;
+  height: 40px;
+  margin-top: 24px;
+
+  background-color: #57b947;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1e374c;
+  }
+
+  @media (min-width: 600px) {
+    margin-top: 0px;
+  }
+}

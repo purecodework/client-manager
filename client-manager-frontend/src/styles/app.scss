@@ -1,0 +1,54 @@
+.app {
+  position: relative;
+
+  width: 90%;
+  margin: auto;
+
+  &__header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    padding: 20px;
+
+    background-color: white;
+    text-align: center;
+    img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__client-actions {
+    max-width: 750px;
+    margin: auto;
+
+    text-align: center;
+
+    @media (min-width: 600px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      .search-bar {
+        flex: 4;
+        input {
+          height: 40px;
+        }
+      }
+
+      .add-client-cta {
+        flex: 1;
+      }
+    }
+
+    input {
+      width: 90%;
+      min-height: 30px;
+      margin-bottom: 12px;
+      padding-left: 10px;
+    }
+  }
+}

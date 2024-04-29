@@ -1,0 +1,116 @@
+.client-column {
+  max-width: 750px;
+  margin: auto;
+
+  &__delete-btn,
+  &__edit-btn,
+  &__save-btn {
+    padding: 10px 15px;
+
+    background-color: #e0e5ec;
+    border: none;
+    color: #1e374c;
+    transition: background-color 0.3s ease;
+
+    &--confirm {
+      background-color: red;
+      border: none;
+      color: white;
+    }
+  }
+
+  &__delete-btn {
+    &:hover {
+      background-color: #ffcccc;
+    }
+  }
+
+  &__edit-btn {
+    &:hover {
+      background-color: #93c5fd;
+      color: white;
+    }
+  }
+
+  &__save-btn {
+    background-color: #57b947 !important;
+  }
+
+  &__cancel-btn,
+  &__save-btn {
+    border: none;
+  }
+
+  &__error {
+    color: red;
+  }
+
+  &__confirm-btn {
+    background-color: red;
+    color: white;
+  }
+
+  &__actions {
+    margin-top: 8px;
+
+    border-bottom: none !important;
+
+    @media (min-width: 600px) {
+      justify-content: end !important;
+
+      gap: 15px;
+    }
+  }
+
+  td {
+    padding: 6px;
+
+    border-bottom: 1px dotted #cccccc;
+  }
+
+  input,
+  select {
+    box-sizing: border-box;
+    width: 40%;
+    height: auto;
+
+    line-height: normal;
+  }
+
+  button {
+    width: 35%;
+
+    border-radius: 10px;
+
+    @media (min-width: 600px) {
+      width: 15%;
+    }
+  }
+
+  table {
+    width: 100%;
+    min-width: 600px;
+
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 8px;
+
+      border: 1px solid #cccccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    input,
+    select,
+    button {
+      width: 100%;
+      margin: 2px 0;
+      padding: 8px;
+    }
+  }
+}

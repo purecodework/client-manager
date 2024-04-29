@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  node_app:
+    container_name: client-manger-server-container
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - PG_DB=client_DB
+      - PG_USER=admin
+      - PG_PASSWORD=12345
+      - PG_HOST=node_db
+    restart: always
+    depends_on:
+      - node_db
+
+  node_db:
+    container_name: client-manger-database-container
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=client_DB
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=12345
+    volumes:
+      - node_db_data:/var/lib/postgresql/data
+
+volumes:
+  node_db_data: {}
