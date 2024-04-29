@@ -52,6 +52,7 @@ yarn
 
 docker compose up
 ```
+This will launch the front end application on localhost:3000 where you can interact with the UI to manage client data.
 
 .
 
